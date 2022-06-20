@@ -7,7 +7,6 @@ import java.io.IOException;
 public class Sample {
 
 	public static void main(String[] args) throws IOException {
-		// TODO 自動生成されたメソッド・スタブ
 		FileReader fr = new FileReader("test.txt");
 		//バッファへのアクセスで効率的にデータを読むことtに特化
 		BufferedReader reader = new BufferedReader(fr);
@@ -22,7 +21,7 @@ public class Sample {
 		line = reader.readLine();
 		System.out.println(line);
 
-		//Sream API使うとこうなる
+		//Stream API使うとこうなる
 		//		try (reader) {
 		//			reader.lines().forEach(System.out::println);
 		//		}
